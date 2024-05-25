@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src = "javascript/chatbox/chatBoxOwner.js"></script>
+<title>Message Display</title>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+    .message-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+    }
+    .incoming {
+        background-color: lightgreen;
+        align-self: flex-start;
+    }
+    .outgoing {
+        background-color: lightpink;
+        align-self: flex-end;
+    }
+    .message {
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin: 5px;
+        word-wrap: break-word;
+    }
+    .message-input-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .message-input {
+        flex: 1;
+        max-width: calc(100% - 180px);
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+    }
+    .send-button, .go-back-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Chat Box</h1>
+</div>
+
+<div id="message-container" class="message-container"></div>
+
+
+<div class="message-input-container">
+    <input type="text" id="message-input" class="message-input" placeholder="Type your message">
+    <button id="send-button" class="send-button" onclick="sendClientMessage(event)">Send</button>
+    <a href="#" id="go-back-button" class="go-back-button" onclick="goBack(event)">Go Back</a>
+</div>
+
+</body>
+</html>

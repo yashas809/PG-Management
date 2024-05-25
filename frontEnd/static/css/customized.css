@@ -1,0 +1,121 @@
+select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow in Firefox */
+    -webkit-appearance: none; /* Remove default arrow in Chrome and Safari */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.33 7.333L10 14.666 2.667 7.333"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    cursor: pointer;
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: 20px;
+}
+.sign-in a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.sign-in {
+    text-align: center;
+    margin-top: 20px;
+}
+.sign-in a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.id-link {
+    color: #007bff;
+    cursor: pointer;
+}
+.id-link:hover {
+    text-decoration: underline;
+}
+
+.filter {
+    margin-bottom: 20px;
+  }
+
+  #rentTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #rentTable th, #rentTable td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #rentTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+
+  #rentTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .highlight {
+    background-color: #ff96a2 !important;
+  }
+
